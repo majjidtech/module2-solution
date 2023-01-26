@@ -1,0 +1,55 @@
+body{
+    background-color: white;
+text-align: center;
+}
+
+.one, .two, .three{
+    position: relative;
+    background-color: gray;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    padding-top: 35px;
+    text-align: left;
+    border: 1px black solid;
+}
+
+.title1,.title2,.title3{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    border: 1px black solid;
+    font-weight: bolder;
+}
+.title1{
+background-color:pink;
+}
+.title2{
+    background-color:orange;
+}
+.title3{
+    background-color:white;
+}
+
+@media (min-width:992px){
+   .one, .two, .three{
+    width: 29%;
+} 
+}
+
+@media (max-width:991px) and (min-width:768px){
+    .one, .two{
+     width: 44%;
+     } 
+
+     .three{
+        width: 93%;
+        } 
+ }
+
+ @media (max-width:767px){
+    .one, .two, .three{
+     width: 88%;
+     } 
+ }
